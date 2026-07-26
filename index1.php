@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hasen Bashree Portfolio</title>
+    <!-- Font Awesome 6 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+    <link rel="stylesheet" href="style.css" />
+    <style>
+        /* Additional styles for form messages */
+        #formStatus {
+            padding: 12px 20px;
+            border-radius: 8px;
+            margin-bottom: 20px;
+            font-weight: 500;
+            display: none;
+        }
+        #formStatus.success {
+            display: block !important;
+            background: #d4edda;
+            color: #155724;
+            border: 1px solid #c3e6cb;
+        }
+        #formStatus.error {
+            display: block !important;
+            background: #f8d7da;
+            color: #721c24;
+            border: 1px solid #f5c6cb;
+        }
+        #formStatus i {
+            margin-right: 8px;
+        }
+        #submitBtn:disabled {
+            opacity: 0.7;
+            cursor: not-allowed;
+        }
+        .btn-loader {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- ================= NAVIGATION ================= -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <a href="#home">Hasen <span>Bashree</span></a>
+            </div>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#projects" class="nav-link">Projects</a></li>
+                <li><a href="#education" class="nav-link">Education</a></li>
+                <li><a href="#achievement" class="nav-link">Achievements</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+            <div class="nav-toggle" id="navToggle">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </nav>
+
+    <!-- ================= HERO ================= -->
+    <section class="hero" id="home">
+        <div class="hero-content">
+            <h1>Hasen Bashree</h1>
+            <p>BCA Student | Web Developer | Full Stack Developer</p>
+            <a href="#contact" class="btn">Let's Connect</a>
+        </div>
+    </section>
+
+    <!-- ================= ABOUT ================= -->
+    <section class="about" id="about">
+        <div class="section-title">
+            <h2>About Me</h2>
+            <span>Who I Am</span>
+        </div>
+        <div class="about-container">
+            <div class="about-image">
+                <img src="HASENPHOT.jpeg" alt="Hasen Bashree" />
+            </div>
+            <div class="about-content">
+                <h3>Hello! I'm Hasen Bashree</h3>
+                <h4>BCA Student | Web Developer | Full Stack Developer</h4>
+                <p>
+                    I am a passionate BCA student from Ballari, Karnataka.
+                    I love creating modern, responsive and user-friendly websites using HTML, CSS,
+                    JavaScript, PHP and MySQL. I enjoy solving real-world problems through
+                    programming and continuously learning new technologies.
+                </p>
+                <div class="about-info">
+                    <div><span>Name</span><p>Hasen Bashree</p></div>
+                    <div><span>Email</span><p>hasenbashree@gmail.com</p></div>
+                    <div><span>Phone</span><p>+91 8088275778</p></div>
+                    <div><span>City</span><p>Ballari, Karnataka</p></div>
+                    <div><span>Degree</span><p>Bachelor of Computer Applications</p></div>
+                    <div><span>Languages</span><p>English, Kannada, Hindi, Urdu, Arabic</p></div>
+                </div>
+                <a href="HASEN_BASHREE_Resume.pdf" class="btn" download>Download Resume</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ================= PROJECTS ================= -->
+    <section class="projects" id="projects">
+        <div class="section-title">
+            <h2>My Projects</h2>
+            <span>Latest Work</span>
+        </div>
+        <div class="project-container">
+            <div class="project-card">
+                <img src="assets/real-estate.jpg" alt="Project" />
+                <div class="project-content">
+                    <h3>Real Estate Management System</h3>
+                    <p>
+                        A complete web application developed using HTML, CSS, JavaScript, PHP and MySQL.
+                        Users can buy, sell and rent properties with secure login and property management.
+                    </p>
+                    <div class="tech">
+                        <span>HTML</span><span>CSS</span><span>JavaScript</span><span>PHP</span><span>MySQL</span>
+                    </div>
+                    <div class="project-buttons">
+                        <a href="#" class="btn">Live Demo</a>
+                        <a href="https://github.com/hasen217" target="_blank" class="btn btn2">GitHub</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ================= EDUCATION ================= -->
+    <section class="education" id="education">
+        <div class="section-title">
+            <h2>Education</h2>
+            <span>Academic Journey</span>
+        </div>
+        <div class="timeline">
+            <div class="timeline-item">
+                <h3>Bachelor of Computer Applications (BCA)</h3>
+                <p>Saraladevi Satishchandra Agarwal College, Ballari</p>
+                <span>2023 - Present</span>
+            </div>
+            <div class="timeline-item">
+                <h3>PUC</h3>
+                <p>Karnataka Board</p>
+                <span>2023</span>
+            </div>
+            <div class="timeline-item">
+                <h3>SSLC</h3>
+                <p>Karnataka Board</p>
+                <span>2021</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- ================= ACHIEVEMENTS ================= -->
+    <section class="achievement" id="achievement">
+        <div class="section-title">
+            <h2>Achievements</h2>
+            <span>Highlights</span>
+        </div>
+        <div class="achievement-container">
+            <div class="achievement-card">
+                <i class="fas fa-award"></i>
+                <h3>Scholarship</h3>
+                <p>Received Scholarship during BCA.</p>
+            </div>
+            <div class="achievement-card">
+                <i class="fas fa-laptop-code"></i>
+                <h3>Coding Competition</h3>
+                <p>Participated in Coding Competitions.</p>
+            </div>
+            <div class="achievement-card">
+                <i class="fas fa-file-powerpoint"></i>
+                <h3>Paper Presentation</h3>
+                <p>Presented Technical Seminar Successfully.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- ================= CONTACT - FIXED (NO PAGE RELOAD) ================= -->
+    <section class="contact" id="contact">
+        <div class="section-title">
+            <h2>Contact Me</h2>
+            <span>Let's Work Together</span>
+        </div>
+        <div class="contact-container">
+            <div class="contact-info">
+                <h3>Get In Touch</h3>
+                <p>
+                    Feel free to contact me for Web Development, Projects, Freelancing and Internship opportunities.
+                </p>
+                <div class="info-box">
+                    <i class="fas fa-envelope"></i>
+                    <span>hasenbashree@gmail.com</span>
+                </div>
+                <div class="info-box">
+                    <i class="fas fa-phone"></i>
+                    <span>+91 8088275778</span>
+                </div>
+                <div class="info-box">
+                    <i class="fas fa-location-dot"></i>
+                    <span>Ballari, Karnataka, India</span>
+                </div>
+                <div class="social">
+                    <a href="https://github.com/hasen217" target="_blank"><i class="fab fa-github"></i></a>
+                    <a href="https://www.linkedin.com/" target="_blank"><i class="fab fa-linkedin"></i></a>
+                    <a href="mailto:hasenbashree@gmail.com"><i class="fas fa-envelope"></i></a>
+                </div>
+            </div>
+            
+            <!-- ✅ FIXED FORM - Stays on same page, no redirect -->
+            <form id="contactForm" action="contact.php" method="POST">
+                <!-- Status message - Shows success/error without leaving page -->
+                <div id="formStatus"></div>
+                
+                <input type="text" name="name" id="name" placeholder="Your Name" required />
+                <input type="email" name="email" id="email" placeholder="Email Address" required />
+                <input type="text" name="subject" id="subject" placeholder="Subject" />
+                <textarea name="message" id="message" rows="7" placeholder="Write your message" required></textarea>
+                
+                <!-- Single Submit Button Only -->
+                <button type="submit" class="btn" id="submitBtn">
+                    <span id="btnText"><i class="fas fa-paper-plane"></i> Send Message</span>
+                    <span id="btnLoader" style="display:none;">
+                        <i class="fas fa-spinner fa-spin"></i> Sending...
+                    </span>
+                </button>
+            </form>
+        </div>
+    </section>
+
+    <!-- ================= FOOTER ================= -->
+    <footer>
+        <h2>Hasen Bashree</h2>
+        <p>BCA Student | Web Developer | Full Stack Developer</p>
+        <div class="footer-social">
+            <a href="https://github.com/hasen217" target="_blank"><i class="fab fa-github"></i></a>
+            <a href="#"><i class="fab fa-linkedin"></i></a>
+        </div>
+        <p class="copyright">© 2026 Hasen Bashree. All Rights Reserved.</p>
+    </footer>
+
+    <!-- ================= JAVASCRIPT - FIXED ================= -->
+    <script>
+        // Navigation toggle
+        const toggle = document.getElementById('navToggle');
+        const menu = document.getElementById('navMenu');
+
+        toggle.addEventListener('click', () => {
+            menu.classList.toggle('active');
+        });
+
+        document.querySelectorAll('.nav-link').forEach(link => {
+            link.addEventListener('click', () => {
+                menu.classList.remove('active');
+            });
+        });
+
+        // =============================================
+        // CONTACT FORM - NO PAGE RELOAD
+        // =============================================
+        document.addEventListener('DOMContentLoaded', function() {
+            const form = document.getElementById('contactForm');
+            const statusDiv = document.getElementById('formStatus');
+            const submitBtn = document.getElementById('submitBtn');
+            const btnText = document.getElementById('btnText');
+            const btnLoader = document.getElementById('btnLoader');
+
+            if (form) {
+                form.addEventListener('submit', function(e) {
+                    // PREVENT PAGE RELOAD
+                    e.preventDefault();
+
+                    // Clear previous status
+                    statusDiv.style.display = 'none';
+                    statusDiv.className = '';
+                    statusDiv.innerHTML = '';
+
+                    // Show loading state on button
+                    btnText.style.display = 'none';
+                    btnLoader.style.display = 'inline';
+                    submitBtn.disabled = true;
+
+                    // Get form data
+                    const formData = new FormData(form);
+
+                    // Send data using AJAX (no page reload)
+                    fetch('contact.php', {
+                        method: 'POST',
+                        body: formData
+                    })
+                    .then(response => response.json())
+                    .then(data => {
+                        // Show status message
+                        statusDiv.style.display = 'block';
+                        statusDiv.className = data.status;
+                        
+                        if (data.status === 'success') {
+                            statusDiv.innerHTML = '<i class="fas fa-check-circle"></i> ' + data.message;
+                            form.reset(); // Clear form fields
+                            
+                            // Auto hide after 5 seconds
+                            setTimeout(() => {
+                                statusDiv.style.display = 'none';
+                            }, 5000);
+                        } else {
+                            statusDiv.innerHTML = '<i class="fas fa-exclamation-circle"></i> ' + data.message;
+                        }
+                    })
+                    .catch(error => {
+                        // Network error
+                        statusDiv.style.display = 'block';
+                        statusDiv.className = 'error';
+                        statusDiv.innerHTML = '<i class="fas fa-exclamation-circle"></i> Network error. Please try again.';
+                    })
+                    .finally(() => {
+                        // Reset button
+                        btnText.style.display = 'inline';
+                        btnLoader.style.display = 'none';
+                        submitBtn.disabled = false;
+                    });
+                });
+            }
+        });
+    </script>
+
+</body>
+</html>
